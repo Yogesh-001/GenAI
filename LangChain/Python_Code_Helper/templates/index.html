@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e9T9hXmJ58bldgTk+" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Yogesh Code Helper</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Python Code Helper</h1>
+
+      <form method="POST">
+        <div class="mb-3">
+          <label for="code" class="form-label">Enter your Python code:</label>
+          <textarea class="form-control" id="code" name="code" rows="10">
+          </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Analyze Code</button>
+      </form>
+
+      {% if response %}
+            <div class="output-container">
+                <div class="output-header">Analysis:</div>
+                <div class="output-content">
+                  <pre class="output-content"><code class="python">{{ response }}</code></pre>
+                </div>
+            </div>
+        {% endif %}
+
+    </div>
+  </body>
+</html>
