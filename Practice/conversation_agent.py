@@ -9,7 +9,6 @@ from functions import getHTMLdata, get_text_chunks, get_vector_store
 from langchain_huggingface import HuggingFacePipeline
 from dotenv import load_dotenv
 
-
 load_dotenv()
 
 def user_input(user_question):
