@@ -47,7 +47,7 @@ def user_input(user_question):
     print("Reply:", response["output_text"])
 
 def conersation():
-    url_link = "https://blog.spheron.network/how-to-build-an-llm-from-scratch-a-step-by-step-guide"
+    url_link = input("Enter your URL Link")
     raw_text = getHTMLdata(url_link)
     if raw_text:
         text_chunks = get_text_chunks(raw_text.get_text(separator="\n", strip=True))
