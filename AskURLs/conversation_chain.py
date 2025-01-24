@@ -4,9 +4,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 from transformers import AutoModelForCausalLM, AutoTokenizer,pipeline
 from langchain_community.llms import HuggingFacePipeline
-from langchain_community.llms import Ollama
 from functions import getHTMLdata, get_text_chunks, get_vector_store
-import streamlit as st
 import os
 
 def get_conversational_chain():
@@ -47,7 +45,6 @@ def user_input(user_question):
     )
 
     print("Reply:", response["output_text"])
-    st.write("Reply:", response["output_text"])
 
 def conersation():
     url_link = "https://blog.spheron.network/how-to-build-an-llm-from-scratch-a-step-by-step-guide"
