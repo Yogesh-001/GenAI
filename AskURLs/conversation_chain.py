@@ -60,27 +60,5 @@ def conersation():
         print("\n Generating an answer......\n")
         user_input(user_question)
 
-def main():
-    st.set_page_config(page_title="Chat with URL Content")
-    st.header("Chat with URL Content 💬")
-
-    url_link = st.text_input("Enter a URL to process and chat with its content")
-
-    if url_link:
-        if st.button("Submit & Process"):
-            with st.spinner("Fetching and processing content from the URL..."):
-                raw_text = getHTMLdata(url_link)
-                if raw_text:
-                    text_chunks = get_text_chunks(raw_text.get_text(separator="\n", strip=True))
-                    get_vector_store(text_chunks)
-                    st.success("Content processed successfully! You can now ask questions.")
-                else:
-                    st.error("Failed to fetch or process the content from the URL.")
-
-    user_question = st.text_input("Ask a question based on the URL content")
-    if user_question:
-        with st.spinner("Generating an answer..."):
-            user_input(user_question)
-
 if __name__ == "__main__":
     conersation()
