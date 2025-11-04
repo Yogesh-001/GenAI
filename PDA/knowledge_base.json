@@ -1,0 +1,88 @@
+{
+  "users": {
+    "Babi": {
+      "name": "Murala Babi",
+      "allergies": ["Curd", "Shellfish"],
+      "dietary_goals": ["High-Protein", "Low-Carb"],
+      "disliked_ingredients": ["Olives", "Mushrooms"]
+    },
+    "Leeluu": {
+      "name": "Sreeleela",
+      "allergies": ["Gluten"],
+      "dietary_goals": ["Low-Carb"],
+      "disliked_ingredients": ["Spicy"]
+    },
+    "Prabhas": {
+      "name": "Prabhas uppalapati",
+      "allergies": [],
+      "dietary_goals": ["Vegan", "High-Protein"],
+      "disliked_ingredients": []
+    }
+  },
+  "recipes": {
+    "r001": {
+      "name": "Thai Chicken Satay",
+      "description": "Grilled chicken skewers with a rich peanut sauce.",
+      "main_protein": "Chicken",
+      "ingredients": ["Chicken Breast", "Peanut Sauce", "Coconut Milk", "Soy Sauce"],
+      "nutrition_per_serving": { "protein_g": 35, "carbs_g": 12 },
+      "tags": ["High-Protein", "Spicy"]
+    },
+    "r002": {
+      "name": "Lemon Herb Chicken with Asparagus",
+      "description": "A simple and light low-carb meal.",
+      "main_protein": "Chicken",
+      "ingredients": ["Chicken Breast", "Lemon", "Olive Oil", "Herbs", "Asparagus", "Olives"],
+      "nutrition_per_serving": { "protein_g": 42, "carbs_g": 8 },
+      "tags": ["High-Protein", "Low-Carb"]
+    },
+    "r003": {
+      "name": "Grilled Chicken & Avocado Salad",
+      "description": "Perfect for a high-protein, low-carb lunch.",
+      "main_protein": "Chicken",
+      "ingredients": ["Chicken Breast", "Avocado", "Spinach", "Cherry Tomatoes", "Vinaigrette"],
+      "nutrition_per_serving": { "protein_g": 38, "carbs_g": 9 },
+      "tags": ["High-Protein", "Low-Carb"]
+    },
+    "r004": {
+      "name": "Classic Mutton & Broccoli",
+      "description": "A popular stir-fry. (Note: Soy sauce contains gluten).",
+      "main_protein": "Mutton",
+      "ingredients": ["Mutton Chops", "Broccoli", "Soy Sauce", "Ginger"],
+      "nutrition_per_serving": { "protein_g": 30, "carbs_g": 20 },
+      "tags": ["High-Protein"]
+    },
+    "r005": {
+      "name": "Gluten-Free Mutton with Roasted Veg",
+      "description": "A hearty low-carb meal.",
+      "main_protein": "Mutton",
+      "ingredients": ["Mutton", "Asparagus", "Bell Peppers", "Olive Oil"],
+      "nutrition_per_serving": { "protein_g": 50, "carbs_g": 10 },
+      "tags": ["High-Protein", "Low-Carb"]
+    },
+    "r006": {
+      "name": "Spicy Tofu Peanut Noodles",
+      "description": "A vegan high-protein option.",
+      "main_protein": "Tofu",
+      "ingredients": ["Tofu", "Rice Noodles", "Peanut Butter", "Sriracha", "Soy Sauce"],
+      "nutrition_per_serving": { "protein_g": 25, "carbs_g": 40 },
+      "tags": ["Vegan", "High-Protein", "Spicy"]
+    },
+    "r007": {
+      "name": "Shrimp Scampi with Zucchini Noodles",
+      "description": "A low-carb seafood classic.",
+      "main_protein": "Seafood",
+      "ingredients": ["Shrimp", "Zucchini", "Garlic", "Butter", "Lemon"],
+      "nutrition_per_serving": { "protein_g": 28, "carbs_g": 7 },
+      "tags": ["Low-Carb", "Seafood"]
+    },
+    "r008": {
+      "name": "Vegan Lentil & Quinoa Bowl",
+      "description": "A complete protein meal for vegans.",
+      "main_protein": "Plant-Based",
+      "ingredients": ["Lentils", "Quinoa", "Tofu", "Spinach", "Tahini Sauce"],
+      "nutrition_per_serving": { "protein_g": 30, "carbs_g": 45 },
+      "tags": ["Vegan", "High-Protein"]
+    }
+  }
+}
