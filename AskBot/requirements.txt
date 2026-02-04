@@ -1,0 +1,10 @@
+Transformers
+langchain
+langchain-huggingface
+langchain-community
+streamlit
+BeautifulSoup
+sentence-transformers
+faiss-cpu
+accelerate>=0.26.0
+bitsandbytes
